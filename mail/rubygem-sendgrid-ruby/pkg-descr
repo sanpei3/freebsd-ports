@@ -1,0 +1,4 @@
+RMail is full support for all Twilio SendGrid Web API v3 endpoints,
+including the new v3 /mail/send.
+
+WWW https://github.com/sendgrid/sendgrid-ruby

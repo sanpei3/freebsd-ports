@@ -1,0 +1,6 @@
+Minitest reporter plugin for CircleCI.
+This gem was made possible by YP.com
+Records test results and generates XML files at the end of the test run.
+These results can be plugged into, for example, Hudson or Jenkins. This format is also the default used by CircleCI.
+
+WWW: https://github.com/circleci/minitest-ci
