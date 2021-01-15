@@ -2,8 +2,8 @@
 # $FreeBSD$
 
 PORTNAME=	zeek
-PORTVERSION=	3.0.11
-PORTREVISION=	1
+PORTVERSION=	3.0.12
+PORTREVISION=	2
 CATEGORIES=	security
 MASTER_SITES=	https://old.zeek.org/downloads/
 DISTFILES=	${DISTNAME}${EXTRACT_SUFX}
@@ -13,7 +13,8 @@ COMMENT=	System for detecting network intruders in real-time
 
 LICENSE=	BSD3CLAUSE
 
-BROKEN_powerpc64=	Does not build: error: zero-size array 'names'
+BROKEN_FreeBSD_11_powerpc64==	Does not build: error: zero-size array 'names'
+BROKEN_FreeBSD_12_powerpc64==	Does not build: error: zero-size array 'names'
 
 USES=		bison cmake compiler:c++11-lang gettext-runtime ninja perl5 python shebangfix ssl
 USE_LDCONFIG=	yes
@@ -54,12 +55,11 @@ PLIST_SUB+=	ARCH=${UNAME_M} \
 USERS=		${ZEEKUSER}
 GROUPS=		${ZEEKGROUP}
 
-OPTIONS_DEFINE= BROCCOLI BROKER DEBUG GEOIP2 IPSUMDUMP LBL_CF LBL_HF \
-		NETMAP PERFTOOLS ZEEKCTL
+OPTIONS_DEFINE= BROKER DEBUG GEOIP2 IPSUMDUMP LBL_CF LBL_HF NETMAP \
+		PERFTOOLS ZEEKCTL
 OPTIONS_DEFAULT=BROKER GEOIP2 IPSUMDUMP LBL_CF LBL_HF NETMAP ZEEKCTL
 OPTIONS_SUB=	yes
 
-BROCCOLI_DESC=	Build support for libbroccoli communications (DEPRECATED)
 BROKER_DESC=	Enable the Broker communication library
 GEOIP2_DESC=	Build with GeoIP2 (MaxMindDB) support
 IPSUMDUMP_DESC=	Enables traffic summaries
@@ -71,7 +71,6 @@ ZEEKCTL_DESC=	ZeekControl support (implies BROKER and IPSUMDUMP)
 
 ZEEKCTL_IMPLIES=		BROKER IPSUMDUMP
 
-BROCCOLI_LIB_DEPENDS=	libbroccoli.so:security/broccoli
 BROKER_BUILD_DEPENDS=	swig:devel/swig
 BROKER_CMAKE_BOOL=	ENABLE_BROKER
 DEBUG_CMAKE_BOOL=	ENABLE_DEBUG
@@ -117,7 +116,6 @@ post-install-ZEEKCTL-on:
 	    ${STAGEDIR}${PREFIX}/share/zeekctl/scripts/zeekctl-config.sh
 
 post-install:
-	${RM} -r ${STAGEDIR}${PREFIX}/share/zeek/cmake
 	${MV} ${STAGEDIR}${DATADIR}/site/local.zeek \
 	    ${STAGEDIR}${DATADIR}/site/local.zeek.sample
 

@@ -29,6 +29,7 @@
     SUBDIR += R-cran-stringr
     SUBDIR += R-cran-utf8
     SUBDIR += R-cran-xml2
+    SUBDIR += R-cran-xmlparsedata
     SUBDIR += R-cran-xtable
     SUBDIR += R-cran-yaml
     SUBDIR += UCD
@@ -82,6 +83,7 @@
     SUBDIR += c2html
     SUBDIR += c2man
     SUBDIR += ca-aspell
+    SUBDIR += cast2gif
     SUBDIR += castxml
     SUBDIR += catdoc
     SUBDIR += cdif
@@ -118,6 +120,7 @@
     SUBDIR += cy-aspell
     SUBDIR += da-aspell
     SUBDIR += dadadodo
+    SUBDIR += dasel
     SUBDIR += datamash
     SUBDIR += db2latex
     SUBDIR += dbacl
@@ -194,6 +197,11 @@
     SUBDIR += fcitx-m17n
     SUBDIR += fcitx-qt5
     SUBDIR += fcitx-table-other
+    SUBDIR += fcitx5
+    SUBDIR += fcitx5-configtool
+    SUBDIR += fcitx5-gtk
+    SUBDIR += fcitx5-lua
+    SUBDIR += fcitx5-qt
     SUBDIR += fex
     SUBDIR += ffe
     SUBDIR += fi-aspell
@@ -311,6 +319,7 @@
     SUBDIR += jing
     SUBDIR += jo
     SUBDIR += jq
+    SUBDIR += jql
     SUBDIR += jrefentry
     SUBDIR += jshon
     SUBDIR += json-yaml
@@ -403,6 +412,7 @@
     SUBDIR += linuxdoc
     SUBDIR += linuxdoc-tools
     SUBDIR += localize
+    SUBDIR += lookatme
     SUBDIR += loook
     SUBDIR += lowdown
     SUBDIR += lt-aspell
@@ -423,6 +433,7 @@
     SUBDIR += markdown
     SUBDIR += markdown-mode.el
     SUBDIR += markdownfmt
+    SUBDIR += markdownpart
     SUBDIR += mathml-xsd
     SUBDIR += mdbook
     SUBDIR += mdocml
@@ -441,6 +452,7 @@
     SUBDIR += ml1
     SUBDIR += mn-aspell
     SUBDIR += modlogan
+    SUBDIR += mp_doccer
     SUBDIR += mr-aspell
     SUBDIR += ms-aspell
     SUBDIR += msort
@@ -513,6 +525,7 @@
     SUBDIR += p5-Geo-Parse-OSM
     SUBDIR += p5-Getopt-Lucid
     SUBDIR += p5-Google-Data-JSON
+    SUBDIR += p5-Grutatxt
     SUBDIR += p5-HTML-Copy
     SUBDIR += p5-HTML-Entities-ImodePictogram
     SUBDIR += p5-HTML-Entities-Interpolate
@@ -1170,16 +1183,6 @@
     SUBDIR += peco
     SUBDIR += perl2html
     SUBDIR += php-mecab
-    SUBDIR += php72-ctype
-    SUBDIR += php72-dom
-    SUBDIR += php72-enchant
-    SUBDIR += php72-pspell
-    SUBDIR += php72-simplexml
-    SUBDIR += php72-wddx
-    SUBDIR += php72-xml
-    SUBDIR += php72-xmlreader
-    SUBDIR += php72-xmlwriter
-    SUBDIR += php72-xsl
     SUBDIR += php73-ctype
     SUBDIR += php73-dom
     SUBDIR += php73-enchant
@@ -1219,7 +1222,6 @@
     SUBDIR += pup
     SUBDIR += py-Chameleon
     SUBDIR += py-CommonMark
-    SUBDIR += py-MarkupSafe
     SUBDIR += py-QDarkStyle
     SUBDIR += py-Tempita
     SUBDIR += py-acora
@@ -1242,6 +1244,7 @@
     SUBDIR += py-cjkwrap
     SUBDIR += py-cloud_sptheme
     SUBDIR += py-cmarkgfm
+    SUBDIR += py-collective.checkdocs
     SUBDIR += py-colorclass
     SUBDIR += py-creole
     SUBDIR += py-cssselect2
@@ -1269,6 +1272,7 @@
     SUBDIR += py-feedparser
     SUBDIR += py-fingerprints
     SUBDIR += py-ftfy
+    SUBDIR += py-furo
     SUBDIR += py-gambit-elasticsearch
     SUBDIR += py-genshi
     SUBDIR += py-gensim
@@ -1282,7 +1286,6 @@
     SUBDIR += py-html2text2018
     SUBDIR += py-humanfriendly
     SUBDIR += py-hunspell
-    SUBDIR += py-hypua2jamo
     SUBDIR += py-isbnlib
     SUBDIR += py-isbntools
     SUBDIR += py-iso-639
@@ -1294,7 +1297,9 @@
     SUBDIR += py-jsx-lexer
     SUBDIR += py-jtextfsm
     SUBDIR += py-junit-xml
+    SUBDIR += py-jupyterlab-pygments
     SUBDIR += py-langdetect
+    SUBDIR += py-langid
     SUBDIR += py-laserhammer
     SUBDIR += py-libxml2
     SUBDIR += py-license-expression
@@ -1302,15 +1307,19 @@
     SUBDIR += py-m2r
     SUBDIR += py-mako
     SUBDIR += py-markdown
+    SUBDIR += py-markdown-it-py
     SUBDIR += py-markdown-math
     SUBDIR += py-markdown2
     SUBDIR += py-markuppy
     SUBDIR += py-markups
+    SUBDIR += py-markupsafe
+    SUBDIR += py-mdit-py-plugins
     SUBDIR += py-misaka
     SUBDIR += py-mistune
     SUBDIR += py-mkdocs
     SUBDIR += py-mkdocs-nature
     SUBDIR += py-mwparserfromhell
+    SUBDIR += py-myst-parser
     SUBDIR += py-nltk
     SUBDIR += py-normality
     SUBDIR += py-numpydoc
@@ -1333,6 +1342,7 @@
     SUBDIR += py-pdfminer3k
     SUBDIR += py-pdfrw
     SUBDIR += py-pdftotext
+    SUBDIR += py-petl
     SUBDIR += py-pikepdf
     SUBDIR += py-precis_i18n
     SUBDIR += py-pss
@@ -1369,6 +1379,7 @@
     SUBDIR += py-qt5-xml
     SUBDIR += py-qt5-xmlpatterns
     SUBDIR += py-rdflib
+    SUBDIR += py-readchar
     SUBDIR += py-recommonmark
     SUBDIR += py-regex
     SUBDIR += py-reno
@@ -1385,6 +1396,7 @@
     SUBDIR += py-sphinx-argparse
     SUBDIR += py-sphinx-autoapi
     SUBDIR += py-sphinx-autodoc-typehints
+    SUBDIR += py-sphinx-inline-tabs
     SUBDIR += py-sphinx-intl
     SUBDIR += py-sphinx-issues
     SUBDIR += py-sphinx-me
@@ -1429,6 +1441,7 @@
     SUBDIR += py-ucl
     SUBDIR += py-ufal.udpipe
     SUBDIR += py-whoosh
+    SUBDIR += py-wordcloud
     SUBDIR += py-wordnet
     SUBDIR += py-wstools
     SUBDIR += py-wtf-peewee
@@ -1490,15 +1503,19 @@
     SUBDIR += ruby-rd-mode.el
     SUBDIR += ruby-rdtool
     SUBDIR += ruby-rttool
+    SUBDIR += rubygem-abbrev
     SUBDIR += rubygem-actionpack-xml_parser-rails5
     SUBDIR += rubygem-actionpack-xml_parser-rails52
     SUBDIR += rubygem-actionpack-xml_parser1-rails4
     SUBDIR += rubygem-actiontext60
+    SUBDIR += rubygem-actiontext61
     SUBDIR += rubygem-albino
     SUBDIR += rubygem-amatch
     SUBDIR += rubygem-asciidoctor
     SUBDIR += rubygem-asciidoctor-diagram
     SUBDIR += rubygem-asciidoctor-include-ext
+    SUBDIR += rubygem-asciidoctor-kroki
+    SUBDIR += rubygem-asciidoctor-pdf
     SUBDIR += rubygem-asciidoctor-plantuml
     SUBDIR += rubygem-asciidoctor-plantuml0010
     SUBDIR += rubygem-autoprefixer-rails
@@ -1524,6 +1541,7 @@
     SUBDIR += rubygem-css_parser
     SUBDIR += rubygem-cssmin
     SUBDIR += rubygem-cucumber-gherkin
+    SUBDIR += rubygem-cucumber-gherkin15
     SUBDIR += rubygem-cucumber-html-formatter
     SUBDIR += rubygem-diff-lcs
     SUBDIR += rubygem-diff_match_patch
@@ -1589,10 +1607,12 @@
     SUBDIR += rubygem-liquid
     SUBDIR += rubygem-liquid-tag-parser
     SUBDIR += rubygem-liquid-tag-parser1
+    SUBDIR += rubygem-liquid4
     SUBDIR += rubygem-loggability
     SUBDIR += rubygem-loofah
     SUBDIR += rubygem-ltsv
     SUBDIR += rubygem-markaby
+    SUBDIR += rubygem-mdl
     SUBDIR += rubygem-minima
     SUBDIR += rubygem-multi_xml
     SUBDIR += rubygem-nokogiri
@@ -1615,6 +1635,7 @@
     SUBDIR += rubygem-rails-dom-testing-rails50
     SUBDIR += rubygem-rails-dom-testing-rails52
     SUBDIR += rubygem-rails-dom-testing-rails60
+    SUBDIR += rubygem-rails-dom-testing-rails61
     SUBDIR += rubygem-rails-dom-testing1
     SUBDIR += rubygem-rails-html-sanitizer
     SUBDIR += rubygem-rak
@@ -1639,6 +1660,8 @@
     SUBDIR += rubygem-rouge318
     SUBDIR += rubygem-rouge319
     SUBDIR += rubygem-rouge321
+    SUBDIR += rubygem-rouge324
+    SUBDIR += rubygem-rouge325
     SUBDIR += rubygem-rttool
     SUBDIR += rubygem-ruby-augeas
     SUBDIR += rubygem-ruby-xslt
@@ -1654,6 +1677,7 @@
     SUBDIR += rubygem-sass-rails-rails50
     SUBDIR += rubygem-sass-rails-rails52
     SUBDIR += rubygem-sass-rails-rails60
+    SUBDIR += rubygem-sass-rails-rails61
     SUBDIR += rubygem-sass32
     SUBDIR += rubygem-sass34
     SUBDIR += rubygem-sassc
@@ -1662,6 +1686,7 @@
     SUBDIR += rubygem-sassc-rails-rails50
     SUBDIR += rubygem-sassc-rails-rails52
     SUBDIR += rubygem-sassc-rails-rails60
+    SUBDIR += rubygem-sassc-rails-rails61
     SUBDIR += rubygem-sassc22
     SUBDIR += rubygem-sax-machine
     SUBDIR += rubygem-scss_lint
@@ -1673,11 +1698,13 @@
     SUBDIR += rubygem-syntax
     SUBDIR += rubygem-termcolor
     SUBDIR += rubygem-terminal-table
+    SUBDIR += rubygem-terminal-table1
     SUBDIR += rubygem-terser
     SUBDIR += rubygem-text
     SUBDIR += rubygem-tidy_ffi
     SUBDIR += rubygem-toml
     SUBDIR += rubygem-tomlrb
+    SUBDIR += rubygem-tomlrb1
     SUBDIR += rubygem-truncato
     SUBDIR += rubygem-twitter-text
     SUBDIR += rubygem-twitter-text1

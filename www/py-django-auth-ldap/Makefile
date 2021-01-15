@@ -21,11 +21,10 @@ USE_PYTHON=	autoplist concurrent distutils
 
 NO_ARCH=	yes
 PORTDOCS=	*
-CONFLICTS_INSTALL=	${PYTHON_PKGNAMEPREFIX}dj21-django-auth-ldap \
-			${PYTHON_PKGNAMEPREFIX}dj22-django-auth-ldap
+CONFLICTS_INSTALL=	${PYTHON_PKGNAMEPREFIX}dj31-django-auth-ldap
 
 OPTIONS_DEFINE=	DOCS
-DOCS_BUILD_DEPENDS=	${PY_SPHINX}
+DOCS_BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}sphinx>=0,1:textproc/py-sphinx@${PY_FLAVOR}
 DOCS_VARS=		PYDISTUTILS_BUILD_TARGET+="build_sphinx -a -E"
 
 post-install-DOCS-on:

@@ -6,6 +6,7 @@
     SUBDIR += 3ddesktop
     SUBDIR += 9box
     SUBDIR += 9menu
+    SUBDIR += aclip
     SUBDIR += admiral
     SUBDIR += alacritty
     SUBDIR += albert
@@ -16,6 +17,7 @@
     SUBDIR += appres
     SUBDIR += apwal
     SUBDIR += arandr
+    SUBDIR += arcan-trayicon
     SUBDIR += aterm
     SUBDIR += babl
     SUBDIR += bbappconf
@@ -60,14 +62,17 @@
     SUBDIR += erun
     SUBDIR += eterm
     SUBDIR += evilvte
+    SUBDIR += evtest
     SUBDIR += fbdesk
     SUBDIR += fbpanel
     SUBDIR += find-cursor
     SUBDIR += fireflies
     SUBDIR += florence
     SUBDIR += flruler
+    SUBDIR += fnott
     SUBDIR += fpc-x11
     SUBDIR += fstobdf
+    SUBDIR += fuzzel
     SUBDIR += gdm
     SUBDIR += glcapsviewer
     SUBDIR += gmrun
@@ -207,6 +212,7 @@
     SUBDIR += lxqt-runner
     SUBDIR += lxrandr
     SUBDIR += ly
+    SUBDIR += mako
     SUBDIR += mate
     SUBDIR += mate-applets
     SUBDIR += mate-base
@@ -269,6 +275,7 @@
     SUBDIR += py-caffeine-ng
     SUBDIR += py-i3ipc
     SUBDIR += py-pyscreenshot
+    SUBDIR += py-python-xapp
     SUBDIR += py-pyvirtualdisplay
     SUBDIR += py-qt5-opengl
     SUBDIR += py-xcffib
@@ -278,6 +285,7 @@
     SUBDIR += qt5-x11extras
     SUBDIR += qterminal
     SUBDIR += radare-cutter
+    SUBDIR += remontoire
     SUBDIR += rendercheck
     SUBDIR += rgb
     SUBDIR += rofi
@@ -315,9 +323,11 @@
     SUBDIR += swaybg
     SUBDIR += swayidle
     SUBDIR += swaylock
+    SUBDIR += swaylock-effects
     SUBDIR += sxhkd
     SUBDIR += sxpc
     SUBDIR += tabbed
+    SUBDIR += taiga
     SUBDIR += temperature.app
     SUBDIR += terminal.app
     SUBDIR += terminator
@@ -338,6 +348,7 @@
     SUBDIR += virtualgl
     SUBDIR += wallutils
     SUBDIR += waybar
+    SUBDIR += wayland-logout
     SUBDIR += wbar
     SUBDIR += wcm
     SUBDIR += wdisplays
@@ -346,6 +357,7 @@
     SUBDIR += wf-shell
     SUBDIR += wl-clipboard
     SUBDIR += wlogout
+    SUBDIR += wlr-randr
     SUBDIR += wlrctl
     SUBDIR += wmappl
     SUBDIR += wmblob
@@ -353,6 +365,7 @@
     SUBDIR += wmcliphist
     SUBDIR += wmctrl
     SUBDIR += wmdrawer
+    SUBDIR += wmfocus
     SUBDIR += wmmatrix
     SUBDIR += wmsystemtray
     SUBDIR += wmutils-core
@@ -362,10 +375,11 @@
     SUBDIR += wofi
     SUBDIR += workrave
     SUBDIR += wshowkeys
+    SUBDIR += wtype
     SUBDIR += x11perf
     SUBDIR += x3270
     SUBDIR += xantfarm
-    SUBDIR += xapps
+    SUBDIR += xapp
     SUBDIR += xascii
     SUBDIR += xauth
     SUBDIR += xautolock
@@ -382,6 +396,7 @@
     SUBDIR += xcalib
     SUBDIR += xcape
     SUBDIR += xcb
+    SUBDIR += xcb-imdkit
     SUBDIR += xcb-proto
     SUBDIR += xcb-util
     SUBDIR += xcb-util-cursor
@@ -403,8 +418,11 @@
     SUBDIR += xconsole
     SUBDIR += xcursorgen
     SUBDIR += xcut
+    SUBDIR += xdg-desktop-portal-wlr
+    SUBDIR += xdialog
     SUBDIR += xditview
     SUBDIR += xdm
+    SUBDIR += xdo
     SUBDIR += xdotool
     SUBDIR += xdpyinfo
     SUBDIR += xdriinfo
@@ -418,14 +436,12 @@
     SUBDIR += xfce4-dashboard
     SUBDIR += xfce4-embed-plugin
     SUBDIR += xfce4-goodies
-    SUBDIR += xfce4-quicklauncher-plugin
     SUBDIR += xfce4-screensaver
     SUBDIR += xfce4-screenshooter-plugin
     SUBDIR += xfce4-taskmanager
     SUBDIR += xfce4-terminal
     SUBDIR += xfce4-verve-plugin
     SUBDIR += xfce4-whiskermenu-plugin
-    SUBDIR += xfce4-wmdock-plugin
     SUBDIR += xfd
     SUBDIR += xfishtank
     SUBDIR += xforward

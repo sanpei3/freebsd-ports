@@ -19,6 +19,7 @@
     SUBDIR += belcard
     SUBDIR += bigyear
     SUBDIR += bijiben
+    SUBDIR += birdtray
     SUBDIR += bitcollider
     SUBDIR += cairo-dock
     SUBDIR += cairo-dock-plugins
@@ -46,6 +47,7 @@
     SUBDIR += dstask
     SUBDIR += easystroke
     SUBDIR += egroupware
+    SUBDIR += elementary-calendar
     SUBDIR += fasd
     SUBDIR += fbreader
     SUBDIR += fet
@@ -117,6 +119,7 @@
     SUBDIR += howm
     SUBDIR += hs-arbtt
     SUBDIR += ical
+    SUBDIR += itinerary
     SUBDIR += jjclient
     SUBDIR += jlj
     SUBDIR += just
@@ -127,7 +130,6 @@
     SUBDIR += kdeconnect-kde
     SUBDIR += kdepim
     SUBDIR += kdepim-addons
-    SUBDIR += kdepim-apps-libs
     SUBDIR += kdepim-runtime
     SUBDIR += keditbookmarks
     SUBDIR += kfind
@@ -217,6 +219,7 @@
     SUBDIR += shutter
     SUBDIR += simpleagenda
     SUBDIR += sliderule
+    SUBDIR += sowon
     SUBDIR += spice-gtk
     SUBDIR += synapse
     SUBDIR += syncthingtray

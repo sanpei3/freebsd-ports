@@ -10,6 +10,7 @@
     SUBDIR += aegisub
     SUBDIR += aom
     SUBDIR += aravis
+    SUBDIR += arcan
     SUBDIR += assimp
     SUBDIR += atomicparsley
     SUBDIR += audacious
@@ -51,6 +52,7 @@
     SUBDIR += dvd-slideshow
     SUBDIR += dvdauthor
     SUBDIR += dvdid
+    SUBDIR += dvdread
     SUBDIR += dvdrip
     SUBDIR += dvdstyler
     SUBDIR += elementary-videos
@@ -237,6 +239,7 @@
     SUBDIR += linux-c7-libv4l
     SUBDIR += linux-tsmuxer
     SUBDIR += linux_dvbwrapper-kmod
+    SUBDIR += livego
     SUBDIR += lives
     SUBDIR += livestreamer
     SUBDIR += lsdvd
@@ -272,6 +275,7 @@
     SUBDIR += mps-youtube
     SUBDIR += mpv
     SUBDIR += mpv-mpris
+    SUBDIR += mpvpaper
     SUBDIR += msdl
     SUBDIR += msopenh264
     SUBDIR += mswebrtc
@@ -303,7 +307,6 @@
     SUBDIR += p5-FFmpeg-Command
     SUBDIR += p5-FLV-Info
     SUBDIR += p5-File-Format-RIFF
-    SUBDIR += p5-GStreamer
     SUBDIR += p5-MP4-Info
     SUBDIR += p5-Net-UPnP
     SUBDIR += p5-Subtitles
@@ -335,14 +338,10 @@
     SUBDIR += py-ffmpeg-python
     SUBDIR += py-gstreamer1
     SUBDIR += py-guessit
-    SUBDIR += py-kaa-base
-    SUBDIR += py-kaa-imlib2
-    SUBDIR += py-kaa-metadata
     SUBDIR += py-librtmp
     SUBDIR += py-mido
     SUBDIR += py-mlt
     SUBDIR += py-moviepy
-    SUBDIR += py-openlp
     SUBDIR += py-periscope
     SUBDIR += py-pretty_midi
     SUBDIR += py-pymediainfo
@@ -394,7 +393,6 @@
     SUBDIR += svt-av1
     SUBDIR += svt-hevc
     SUBDIR += svt-vp9
-    SUBDIR += swfdec-gnome
     SUBDIR += syncplay
     SUBDIR += szap-s2
     SUBDIR += tautulli

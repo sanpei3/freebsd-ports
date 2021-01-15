@@ -5,6 +5,7 @@
 
     SUBDIR += 44bsd-csh
     SUBDIR += ammonite
+    SUBDIR += anongitssh
     SUBDIR += antibody
     SUBDIR += ast-ksh
     SUBDIR += bash
@@ -40,6 +41,7 @@
     SUBDIR += pear-PHP_Shell
     SUBDIR += psh
     SUBDIR += rc
+    SUBDIR += rubygem-shellwords
     SUBDIR += rush
     SUBDIR += sash
     SUBDIR += scponly

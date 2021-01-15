@@ -32,7 +32,9 @@
     SUBDIR += arirang
     SUBDIR += arpCounterattack
     SUBDIR += asignify
+    SUBDIR += assh
     SUBDIR += autossh
+    SUBDIR += aws-c-cal
     SUBDIR += aws-iam-authenticator
     SUBDIR += aws-vault
     SUBDIR += axTLS
@@ -50,10 +52,10 @@
     SUBDIR += belier
     SUBDIR += bfbtester
     SUBDIR += binwalk
+    SUBDIR += bitwarden_rs
     SUBDIR += boringssl
     SUBDIR += botan110
     SUBDIR += botan2
-    SUBDIR += broccoli
     SUBDIR += bruteblock
     SUBDIR += bruteforceblocker
     SUBDIR += bsdsfv
@@ -157,6 +159,7 @@
     SUBDIR += fizz
     SUBDIR += fl0p
     SUBDIR += flawfinder
+    SUBDIR += fpc-gnutls
     SUBDIR += fpc-openssl
     SUBDIR += fprint_demo
     SUBDIR += fprintd
@@ -190,10 +193,12 @@
     SUBDIR += govpn
     SUBDIR += gpa
     SUBDIR += gpgdir
+    SUBDIR += gpg-gui
     SUBDIR += gpgme
     SUBDIR += gpgme-cpp
     SUBDIR += gpgme-qt5
     SUBDIR += gputty
+    SUBDIR += greenbone-security-assistant
     SUBDIR += greenbone-security-assistant8
     SUBDIR += greenbone-security-assistant9
     SUBDIR += gringotts
@@ -201,6 +206,9 @@
     SUBDIR += gss
     SUBDIR += gstreamer1-plugins-dtls
     SUBDIR += gtkpasman
+    SUBDIR += gvm
+    SUBDIR += gvmd
+    SUBDIR += gvm-libs
     SUBDIR += gwee
     SUBDIR += hackbot
     SUBDIR += hardening-check
@@ -408,6 +416,7 @@
     SUBDIR += openssl-devel
     SUBDIR += openssl-unsafe
     SUBDIR += openssl_tpm_engine
+    SUBDIR += openvas
     SUBDIR += openvas8
     SUBDIR += openvas8-cli
     SUBDIR += openvas8-libraries
@@ -426,7 +435,6 @@
     SUBDIR += openvpn-devel
     SUBDIR += openvpn-mbedtls
     SUBDIR += ophcrack
-    SUBDIR += orthrus
     SUBDIR += ossec-hids
     SUBDIR += ossec-hids-agent
     SUBDIR += ossec-hids-agent-config
@@ -781,10 +789,6 @@
     SUBDIR += pgpdump
     SUBDIR += pgpgpg
     SUBDIR += pgpin
-    SUBDIR += php72-filter
-    SUBDIR += php72-hash
-    SUBDIR += php72-openssl
-    SUBDIR += php72-sodium
     SUBDIR += php73-filter
     SUBDIR += php73-hash
     SUBDIR += php73-openssl
@@ -850,7 +854,6 @@
     SUBDIR += py-artifacts
     SUBDIR += py-asyncssh
     SUBDIR += py-authlib
-    SUBDIR += py-backports.ssl_match_hostname
     SUBDIR += py-bcrypt
     SUBDIR += py-btchip-python
     SUBDIR += py-cerealizer
@@ -904,6 +907,7 @@
     SUBDIR += py-gpsoauth
     SUBDIR += py-gssapi
     SUBDIR += py-gtts-token
+    SUBDIR += py-gvm-tools
     SUBDIR += py-hkdf
     SUBDIR += py-htpasswd
     SUBDIR += py-itsdangerous
@@ -915,7 +919,6 @@
     SUBDIR += py-libnacl
     SUBDIR += py-m2crypto
     SUBDIR += py-maec
-    SUBDIR += py-mcrypt
     SUBDIR += py-merkletools
     SUBDIR += py-mixbox
     SUBDIR += py-mnemonic
@@ -925,9 +928,10 @@
     SUBDIR += py-ntlm-auth
     SUBDIR += py-oauth2client
     SUBDIR += py-oauthlib
-    SUBDIR += py-obfsproxy-tor
+    SUBDIR += py-onlykey
     SUBDIR += py-openssl
     SUBDIR += py-ospd
+    SUBDIR += py-ospd-openvas
     SUBDIR += py-paramiko
     SUBDIR += py-paramiko1
     SUBDIR += py-pass-audit
@@ -951,19 +955,21 @@
     SUBDIR += py-pynacl
     SUBDIR += py-pyotp
     SUBDIR += py-pyotp2289
-    SUBDIR += py-pyptlib
     SUBDIR += py-pysaml2
     SUBDIR += py-pysaml24
     SUBDIR += py-pyscard
     SUBDIR += py-pysha3
     SUBDIR += py-pysodium
+    SUBDIR += py-pyspnego
     SUBDIR += py-python-axolotl
     SUBDIR += py-python-axolotl-curve25519
     SUBDIR += py-python-gnupg
+    SUBDIR += py-python-gvm
     SUBDIR += py-python-jose
     SUBDIR += py-python-nss
     SUBDIR += py-python-openid
     SUBDIR += py-python-pam
+    SUBDIR += py-python-pkcs11
     SUBDIR += py-python-registry
     SUBDIR += py-python3-openid
     SUBDIR += py-python3-saml
@@ -1004,6 +1010,7 @@
     SUBDIR += py-virustotal-api
     SUBDIR += py-volatility3
     SUBDIR += py-vulndb
+    SUBDIR += py-webauthn
     SUBDIR += py-xkcdpass
     SUBDIR += py-xmlsec
     SUBDIR += py-yara
@@ -1143,10 +1150,12 @@
     SUBDIR += rubygem-safety_net_attestation
     SUBDIR += rubygem-scrypt
     SUBDIR += rubygem-securecompare
+    SUBDIR += rubygem-securerandom
     SUBDIR += rubygem-signet
     SUBDIR += rubygem-six
     SUBDIR += rubygem-sshkey
     SUBDIR += rubygem-sshkit
+    SUBDIR += rubygem-sslshake
     SUBDIR += rubygem-timfel-krb5
     SUBDIR += rubygem-tpm-key_attestation
     SUBDIR += rubygem-twitter_oauth
@@ -1159,7 +1168,6 @@
     SUBDIR += samhain-client
     SUBDIR += samhain-server
     SUBDIR += sancp
-    SUBDIR += sandsifter
     SUBDIR += sasp
     SUBDIR += scanlogd
     SUBDIR += scanssh
@@ -1205,11 +1213,13 @@
     SUBDIR += sops
     SUBDIR += spass
     SUBDIR += spass-qt5
+    SUBDIR += spectre-meltdown-checker
     SUBDIR += spm
     SUBDIR += spybye
     SUBDIR += sqlmap
     SUBDIR += sqlninja
     SUBDIR += srm
+    SUBDIR += ssb
     SUBDIR += ssdeep
     SUBDIR += ssh-multiadd
     SUBDIR += ssh-vault
@@ -1290,6 +1300,7 @@
     SUBDIR += webscarab
     SUBDIR += whatweb
     SUBDIR += wipe
+    SUBDIR += wolfssh
     SUBDIR += wolfssl
     SUBDIR += wpa_supplicant
     SUBDIR += xca
@@ -1297,6 +1308,7 @@
     SUBDIR += xml-security
     SUBDIR += xmlsec1
     SUBDIR += xorsearch
+    SUBDIR += xray-core
     SUBDIR += yafic
     SUBDIR += yapet
     SUBDIR += yara

@@ -85,6 +85,7 @@
     SUBDIR += libticables2
     SUBDIR += libticalcs2
     SUBDIR += libusbmuxd
+    SUBDIR += limesuite
     SUBDIR += linrad
     SUBDIR += liquid-dsp
     SUBDIR += lirc
@@ -136,7 +137,6 @@
     SUBDIR += py-adafruit-ampy
     SUBDIR += py-esptool
     SUBDIR += py-hidapi
-    SUBDIR += py-libconcord
     SUBDIR += py-lirc
     SUBDIR += py-pyserial
     SUBDIR += py-qt5-sensors

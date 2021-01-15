@@ -4,9 +4,10 @@ bin/cadabra2-cli
 %%GUI%%bin/cadabra2-gtk
 bin/cadabra2cadabra
 bin/cadabra2html
+bin/cadabra2ipynb
 bin/cadabra2latex
 bin/cadabra2python
-%%PYTHON_SITELIBDIR%%/cadabra2.so
+%%PYTHON_SITELIBDIR%%/cadabra2.cpython-%%PYTHON_SUFFIX%%m.so
 %%PYTHON_SITELIBDIR%%/cadabra2_defaults.py
 %%PYTHON_SITELIBDIR%%/cadabra2_jupyter/__init__.py
 %%PYTHON_SITELIBDIR%%/cadabra2_jupyter/__main__.py
@@ -17,6 +18,7 @@ bin/cadabra2python
 %%PYTHON_SITELIBDIR%%/cdb/core/component.cnb
 %%PYTHON_SITELIBDIR%%/cdb/core/manip.cnb
 %%PYTHON_SITELIBDIR%%/cdb/core/solve.cnb
+%%PYTHON_SITELIBDIR%%/cdb/core/trace.cnb
 %%PYTHON_SITELIBDIR%%/cdb/gauge_theory/__init__.py
 %%PYTHON_SITELIBDIR%%/cdb/gauge_theory/instantons.py
 %%PYTHON_SITELIBDIR%%/cdb/relativity/abstract.cnb
@@ -119,6 +121,7 @@ bin/cadabra2python
 %%GUI%%%%DATADIR%%/manual/properties/Symmetric.cnb
 %%GUI%%%%DATADIR%%/manual/properties/Tableau.cnb
 %%GUI%%%%DATADIR%%/manual/properties/TableauSymmetry.cnb
+%%GUI%%%%DATADIR%%/manual/properties/Trace.cnb
 %%GUI%%%%DATADIR%%/manual/properties/Vielbein.cnb
 %%GUI%%%%DATADIR%%/manual/properties/WeightInherit.cnb
 %%GUI%%%%DATADIR%%/notebook.html
@@ -136,5 +139,6 @@ share/man/man1/cadabra2-cli.1.gz
 share/man/man1/cadabra2.1.gz
 share/man/man1/cadabra2cadabra.1.gz
 share/man/man1/cadabra2html.1.gz
+share/man/man1/cadabra2ipynb.1.gz
 share/man/man1/cadabra2latex.1.gz
 share/man/man1/cadabra2python.1.gz

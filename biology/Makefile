@@ -51,6 +51,7 @@
     SUBDIR += graphlan
     SUBDIR += grappa
     SUBDIR += groopm
+    SUBDIR += haplohseq
     SUBDIR += hhsuite
     SUBDIR += hisat2
     SUBDIR += hmmer
@@ -114,6 +115,7 @@
     SUBDIR += phyml
     SUBDIR += picard-tools
     SUBDIR += plink
+    SUBDIR += pooler
     SUBDIR += primer3
     SUBDIR += prodigal
     SUBDIR += prodigy-lig

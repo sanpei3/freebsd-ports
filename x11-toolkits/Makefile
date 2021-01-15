@@ -84,7 +84,6 @@
     SUBDIR += libwnck
     SUBDIR += libwnck3
     SUBDIR += libxaw3dxft
-    SUBDIR += libxfce4gui
     SUBDIR += linux-c7-gtk2
     SUBDIR += linux-c7-gtk3
     SUBDIR += linux-c7-openmotif
@@ -161,7 +160,6 @@
     SUBDIR += plib
     SUBDIR += py-AnyQt
     SUBDIR += py-Pmw
-    SUBDIR += py-SquareMap
     SUBDIR += py-easygui
     SUBDIR += py-fltk
     SUBDIR += py-guietta

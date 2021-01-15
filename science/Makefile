@@ -59,7 +59,6 @@
     SUBDIR += cp2k-data
     SUBDIR += crf++
     SUBDIR += dalton
-    SUBDIR += datawarrior
     SUBDIR += dcl
     SUBDIR += devisor
     SUBDIR += dftbplus
@@ -223,6 +222,7 @@
     SUBDIR += py-PyFR
     SUBDIR += py-SimpleSpectral
     SUBDIR += py-abipy
+    SUBDIR += py-access
     SUBDIR += py-asdf
     SUBDIR += py-ase
     SUBDIR += py-avogadrolibs
@@ -232,7 +232,8 @@
     SUBDIR += py-chempy
     SUBDIR += py-coards
     SUBDIR += py-dlib
-    SUBDIR += py-eccodes-python
+    SUBDIR += py-eccodes
+    SUBDIR += py-esda
     SUBDIR += py-geolinks
     SUBDIR += py-geomet
     SUBDIR += py-geometer
@@ -241,16 +242,20 @@
     SUBDIR += py-gsd
     SUBDIR += py-h5json
     SUBDIR += py-h5py
+    SUBDIR += py-inequality
+    SUBDIR += py-jupyter_jsmol
     SUBDIR += py-kim-query
     SUBDIR += py-kinematics
     SUBDIR += py-kliff
     SUBDIR += py-liac-arff
+    SUBDIR += py-libpysal
     SUBDIR += py-lifelines
     SUBDIR += py-mdp
     SUBDIR += py-mmtf-python
     SUBDIR += py-molmod
     SUBDIR += py-moltemplate
     SUBDIR += py-netCDF4
+    SUBDIR += py-netcdf-flattener
     SUBDIR += py-obspy
     SUBDIR += py-oddt
     SUBDIR += py-openpiv
@@ -284,8 +289,12 @@
     SUBDIR += py-scimath
     SUBDIR += py-scipy
     SUBDIR += py-scoria
+    SUBDIR += py-segregation
+    SUBDIR += py-segyio
+    SUBDIR += py-spaghetti
     SUBDIR += py-spglib
     SUBDIR += py-tensorflow
+    SUBDIR += py-tobler
     SUBDIR += py-veusz
     SUBDIR += pybrain
     SUBDIR += pynn
@@ -307,6 +316,8 @@
     SUBDIR += rubygem-ruby-dcl
     SUBDIR += rubygem-ruby-netcdf
     SUBDIR += scidavis
+    SUBDIR += segyio
+    SUBDIR += shelxle
     SUBDIR += siesta
     SUBDIR += sigrok-cli
     SUBDIR += sigrok-firmware
@@ -326,6 +337,7 @@
     SUBDIR += szip
     SUBDIR += teem
     SUBDIR += tfel
+    SUBDIR += tfel-edf
     SUBDIR += tinker
     SUBDIR += udunits
     SUBDIR += v_sim

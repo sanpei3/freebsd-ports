@@ -2,7 +2,7 @@
 # $FreeBSD$
 
 PORTNAME=	pentobi
-PORTVERSION=	18.3
+PORTVERSION=	18.4
 CATEGORIES=	games
 MASTER_SITES=	SF/${PORTNAME}/${PORTVERSION}
 
@@ -13,12 +13,12 @@ LICENSE=	GPLv3+
 LICENSE_FILE=	${WRKSRC}/LICENSE.md
 
 BUILD_DEPENDS=	itstool:textproc/itstool \
-		rsvg-convert:graphics/librsvg2 \
 		xsltproc:textproc/libxslt \
 		${LOCALBASE}/share/xsl/docbook/manpages/docbook.xsl:textproc/docbook-xsl
 
-USES=		compiler:c++14-lang cmake desktop-file-utils gettext-tools qt:5 \
+USES=		compiler:c++14-lang cmake desktop-file-utils gettext-tools gnome qt:5 \
 		shared-mime-info tar:xz
+USE_GNOME=	librsvg2:build
 USE_QT=		core gui widgets svg concurrent quickcontrols2 \
 		declarative network \
 		qmake_build buildtools_build linguisttools_build

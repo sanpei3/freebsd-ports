@@ -1,7 +1,7 @@
 # $FreeBSD$
 
 PORTNAME=	yuzu
-PORTVERSION=	s20201106
+PORTVERSION=	s20201218
 PORTREVISION?=	0
 CATEGORIES=	emulators
 
@@ -24,10 +24,8 @@ ONLY_FOR_ARCHS=	aarch64 amd64 powerpc64
 ONLY_FOR_ARCHS_REASON=	requires int128
 
 BUILD_DEPENDS=	catch>0:devel/catch \
-		gmake:devel/gmake \
 		nlohmann-json>0:devel/nlohmann-json
 LIB_DEPENDS=	liblz4.so:archivers/liblz4 \
-		libzip.so:archivers/libzip \
 		libzstd.so:archivers/zstd \
 		libopus.so:audio/opus \
 		libboost_context.so:devel/boost-libs \
@@ -36,9 +34,8 @@ LIB_DEPENDS=	liblz4.so:archivers/liblz4 \
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	yuzu-emu
-GH_TAGNAME=	91a45834f
-GH_TUPLE=	yuzu-emu:unicorn:1.0.1-153-g73f45735:unicorn/externals/unicorn \
-		DarkLordZach:mbedtls:a280e60:mbedtls/externals/mbedtls \
+GH_TAGNAME=	0b47f7a46
+GH_TUPLE=	DarkLordZach:mbedtls:a280e60:mbedtls/externals/mbedtls \
 		KhronosGroup:SPIRV-Headers:2c51218:SPIRV_Headers/externals/sirit/externals/SPIRV-Headers \
 		KhronosGroup:Vulkan-Headers:v1.2.145:Vulkan_Headers/externals/Vulkan-Headers \
 		MerryMage:dynarmic:r3-242-g0e1112b7:dynarmic/externals/dynarmic \
@@ -46,10 +43,11 @@ GH_TUPLE=	yuzu-emu:unicorn:1.0.1-153-g73f45735:unicorn/externals/unicorn \
 		arsenm:sanitizers-cmake:aab6948:sanitizers_cmake/externals/cubeb/cmake/sanitizers-cmake \
 		citra-emu:ext-soundtouch:060181e:soundtouch/externals/soundtouch \
 		herumi:xbyak:v5.96:xbyak/externals/xbyak \
-		kinetiknz:cubeb:cubeb-0.2-1251-ga7e83aa:cubeb/externals/cubeb \
+		nih-at:libzip:rel-1-5-2-93-g89bd6d63:libzip/externals/libzip/libzip \
+		kinetiknz:cubeb:cubeb-0.2-1291-g5c2cf26:cubeb/externals/cubeb \
 		benhoyt:inih:r52:inih/externals/inih/inih
 
-USES=		cmake compiler:c++17-lang localbase:ldflags python:build sdl ssl
+USES=		cmake compiler:c++17-lang localbase:ldflags sdl ssl
 USE_SDL=	sdl2
 LDFLAGS+=	-Wl,--as-needed # Qt5Network
 TEST_TARGET=	test
@@ -78,8 +76,8 @@ SDL_PLIST_FILES=bin/${PORTNAME}-cmd \
 		bin/${PORTNAME}-tester
 
 QT5_USES=	desktop-file-utils qt:5 shared-mime-info
-QT5_USE=	QT=qmake_build,buildtools_build,concurrent_build,core,gui,webengine,widgets
-QT5_CMAKE_BOOL=	ENABLE_QT YUZU_USE_QT_WEB_ENGINE
+QT5_USE=	QT=qmake_build,buildtools_build,linguisttools_build,concurrent_build,core,gui,webengine,widgets
+QT5_CMAKE_BOOL=	ENABLE_QT ENABLE_QT_TRANSLATION YUZU_USE_QT_WEB_ENGINE
 QT5_PLIST_FILES=bin/${PORTNAME} \
 		share/applications/${PORTNAME}.desktop \
 		share/icons/hicolor/scalable/apps/${PORTNAME}.svg \
