@@ -124,6 +124,7 @@
     SUBDIR += edbrowse
     SUBDIR += eden
     SUBDIR += efront
+    SUBDIR += element-web
     SUBDIR += elgg
     SUBDIR += elinks
     SUBDIR += elixir-html_entities
@@ -468,6 +469,7 @@
     SUBDIR += npm-node12
     SUBDIR += npm-node14
     SUBDIR += nspluginwrapper
+    SUBDIR += oauth2-proxy
     SUBDIR += obhttpd
     SUBDIR += oneshot
     SUBDIR += onionbalance
@@ -1760,6 +1762,7 @@
     SUBDIR += py-webassets
     SUBDIR += py-webob
     SUBDIR += py-weboob
+    SUBDIR += py-weboob-qt
     SUBDIR += py-websocket-client
     SUBDIR += py-webunit
     SUBDIR += py-werkzeug
@@ -1790,7 +1793,6 @@
     SUBDIR += resin3
     SUBDIR += restbed
     SUBDIR += retawq
-    SUBDIR += riot-web
     SUBDIR += rss-bridge
     SUBDIR += rsskit
     SUBDIR += rssroll
