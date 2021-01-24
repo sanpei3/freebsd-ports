@@ -1,0 +1,3 @@
+A simple Ruby wrapper around the terminal-notifier command-line tool, which allows you to send User Notifications to the Notification Center on Mac OS X 10.8, or higher.
+
+WWW: https://github.com/Codaisseur/terminal-notifier-guard
